@@ -963,17 +963,17 @@
                     certificateInput.required = false;
                     charCount.textContent = '0';
                     document.querySelectorAll('.form-group').forEach(group => group.classList.remove('error'));
-                    setTimeout(() => successMessage.style.display = 'none', 3000);
+                    setTimeout(() => successMessage.style.display = 'none', 3600);
                 } else {
                     errorAlert.textContent = result.error;
                     errorAlert.style.display = 'block';
-                    setTimeout(() => errorAlert.style.display = 'none', 3000);
+                    setTimeout(() => errorAlert.style.display = 'none', 3600);
                 }
             } catch (error) {
                 console.error('Error submitting request:', error);
                 errorAlert.textContent = 'Server error';
                 errorAlert.style.display = 'block';
-                setTimeout(() => errorAlert.style.display = 'none', 3000);
+                setTimeout(() => errorAlert.style.display = 'none', 3600);
             }
         });
 
