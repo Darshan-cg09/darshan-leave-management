@@ -14,7 +14,7 @@ app.use(express.json());
 // PostgreSQL connection
 const pool = new Pool({
     user: 'postgres',
-    host: 'postgres15',
+    host: 'leave-postgres',
     database: 'leave_management',
     password: 'admin123',
     port: 5432,
